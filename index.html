@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Proteino_Yashnabod">
+<meta property="og:description" content="Hammasini shuyerdan toping!">
+<meta property="og:image" content="https://i.postimg.cc/SNztK4dr/photo-2026-01-07-08-07-26.jpg">
+<meta property="og:type" content="website">
+<title>Proteino_Yashnabod</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  background:#0f0b09;
+  color:#fff;
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* BACKGROUND VIDEO */
+.bg-video{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+}
+
+/* OVERLAY */
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(15,11,9,.75);
+  z-index:-1;
+}
+
+/* CONTAINER */
+.container{
+  width:100%;
+  max-width:420px;
+  padding:18px 14px 120px;
+  text-align:center;
+}
+
+/* PROFILE */
+.profile img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #fff;
+}
+.name{
+  margin-top:12px;
+  font-size:22px;
+  font-weight:700;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+}
+.check{
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  background:#3b82f6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+}
+.bio{
+  margin-top:6px;
+  font-size:14px;
+  opacity:.9;
+}
+
+/* SECTION */
+.section{margin-top:26px}
+.section h3{margin-bottom:18px;font-size:18px}
+
+/* BUTTON */
+.btn{
+  background:#000;
+  color:#fff;
+  padding:20px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  font-weight:600;
+  margin:10px auto;
+  max-width:360px;
+  box-shadow:0 0 18px rgba(255,0,0,.6);
+  animation:pulse 4s infinite;
+}
+.btn i{font-size:18px;width:22px}
+
+@keyframes pulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.04)}
+}
+
+/* MAP */
+.map{
+  margin-top:12px;
+  border-radius:18px;
+  overflow:hidden;
+}
+.map iframe{
+  width:100%;
+  height:220px;
+  border:0;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:40px;
+  font-size:13px;
+  opacity:.8;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.footer a{
+  color:#fff;
+  text-decoration:none;
+}
+.footer a:hover{text-decoration:underline}
+
+/* SHARE */
+.share{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#000;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  box-shadow:0 0 18px rgba(255,0,0,.7);
+  animation:float 3s infinite;
+}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
+}
+
+/* MOBILE */
+@media(max-width:480px){
+  .btn{padding:16px;font-size:15px}
+}
+</style>
+</head>
+
+<body>
+
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="proteine.mp4" type="video/mp4">
+</video>
+<div class="overlay"></div>
+
+<div class="container">
+
+<div class="profile">
+  <img src="https://i.postimg.cc/SNztK4dr/photo-2026-01-07-08-07-26.jpg">
+  <div class="name">
+    Proteino_Yashnabod
+    <span class="check"><i class="fa-solid fa-check"></i></span>
+  </div>
+  <div class="bio">Hammasini shuyerdan toping!</div>
+</div>
+
+<div class="section">
+<a class="btn" href="tel:+998947222552"><i class="fa-solid fa-phone"></i>Telefon raqam</a>
+<a class="btn" href="https://t.me/sportpit66"><i class="fa-brands fa-telegram"></i>Telegram kanal</a>
+<a class="btn" href="https://t.me/Neolinks1"><i class="fa-brands fa-telegram"></i>Telegram admin</a>
+<a class="btn" href="https://www.instagram.com/proteino_yashnabod"><i class="fa-brands fa-instagram"></i>Instagram</a>
+</div>
+
+<div class="section">
+<h3>Yashnobod filyalimiz</h3>
+<a class="btn" href="https://yandex.ru/maps?whatshere%5Bpoint%5D=69.34169339971885%2C41.296661268863836">
+<i class="fa-solid fa-location-dot"></i>Lokatsiya</a>
+<div class="map">
+<iframe src="https://yandex.ru/map-widget/v1/?ll=69.34152859875651%2C41.296702158801494&z=16"></iframe>
+</div>
+</div>
+
+<div class="section">
+<h3>Yunusobod filyalimiz</h3>
+<a class="btn" href="tel:+998507112323"><i class="fa-solid fa-phone"></i>Telefon raqam</a>
+<a class="btn" href="https://yandex.ru/maps?whatshere%5Bpoint%5D=69.28943839964161%2C41.36702608445986">
+<i class="fa-solid fa-location-dot"></i>Lokatsiya</a>
+<div class="map">
+<iframe src="https://yandex.ru/map-widget/v1/?ll=69.28946445264195%2C41.36711351647345&z=16"></iframe>
+</div>
+</div>
+
+<div class="section">
+<h3>Sergili filyalimiz</h3>
+<a class="btn" href="tel:+998932357005"><i class="fa-solid fa-phone"></i>Telefon raqam</a>
+<a class="btn" href="https://yandex.ru/maps?whatshere%5Bpoint%5D=69.22095982553317%2C41.22489057967458">
+<i class="fa-solid fa-location-dot"></i>Lokatsiya</a>
+<div class="map">
+<iframe src="https://yandex.ru/map-widget/v1/?ll=69.22083081985691%2C41.224841305241064&z=16"></iframe>
+</div>
+</div>
+
+<div class="section">
+<h3>Maksim Gorkiy filyalimiz</h3>
+<a class="btn" href="tel:+998940191117"><i class="fa-solid fa-phone"></i>Telefon raqam</a>
+<a class="btn" href="https://yandex.ru/maps?whatshere%5Bpoint%5D=69.32357438043816%2C41.32326020758125">
+<i class="fa-solid fa-location-dot"></i>Lokatsiya</a>
+<div class="map">
+<iframe src="https://yandex.ru/map-widget/v1/?ll=69.32348418966548%2C41.32331669487737&z=16"></iframe>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <a href="#" onclick="secureMsg()">Cookie</a> •
+  <a href="#" onclick="secureMsg()">Report</a> •
+  <a href="https://www.instagram.com/_neolink1" target="_blank">Privacy</a>
+</div>
+
+</div>
+
+<div class="share" id="shareBtn">
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+
+<script>
+function secureMsg(){
+  alert("Xavfsizlik uchun dev");
+}
+
+document.getElementById("shareBtn").addEventListener("click",()=>{
+  if(navigator.share){
+    navigator.share({
+      title:"Proteino_Yashnabod",
+      text:"Proteino_Yashnabod — Hammasini shuyerdan toping!",
+      url:location.href
+    });
+  }else{
+    prompt("Havolani nusxalab oling:",location.href);
+  }
+});
+</script>
+
+</body>
+</html>
